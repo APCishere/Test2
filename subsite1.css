@@ -1,56 +1,26 @@
-/* General styles for the body */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-  height: auto;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #f4f4f9, #ccccd9, #9999b2, #66668c);
-}
-
-/* Breadcrumb styles */
-.breadcrumb {
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  background-color: black; /* Black bezel */
-  color: white;
+/* Site Header Styles */
+.site-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color: #0077cc;
-  transition: color 0.3s ease, font-weight 0.3s ease;
-}
-
-.breadcrumb a:hover {
-  color: #66b2ff;
-  font-weight: bold;
-}
-
-.breadcrumb span {
-  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: black;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
-/* Page Content */
-h1 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 3em; /* Triple the original font size */
-  line-height: 2; /* Double the line spacing */
+.site-logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-p {
-  margin: 20px;
-  text-align: center; /* Center align text */
-  font-size: 1.5em; /* Triple the original font size (assuming base was ~0.5em) */
-  line-height: 2; /* Double the line spacing */
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
