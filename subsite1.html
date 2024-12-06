@@ -4,9 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subsite 1</title>
+  <style>
+    /* Basic styling for breadcrumbs */
+    .breadcrumb {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: blue;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb span {
+      margin: 0 5px;
+      color: gray;
+    }
+  </style>
 </head>
 <body>
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>&gt;</span>
+    <a href="subsite.html">Subsite</a>
+    <span>&gt;</span>
+    <span>Subsite 1</span>
+  </nav>
+
+  <!-- Page Content -->
   <h1>Welcome to Subsite 1</h1>
-  <a href="index.html">Back to Home</a>
+  <p>This is the content of Subsite 1.</p>
 </body>
 </html>
