@@ -1,0 +1,57 @@
+/* General styles for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  height: auto;
+  min-height: 100vh;
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #f4f4f9, #ccccd9, #9999b2, #66668c);
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: black; /* Black bezel */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #66b2ff;
+  font-weight: bold;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+  color: white;
+}
+
+/* Page Content */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 20px;
+  text-align: justify;
+}
