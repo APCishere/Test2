@@ -5,27 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subsite 1</title>
   <style>
-    /* Basic styling for breadcrumbs */
+    /* General styles for the body */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Breadcrumb styles */
     .breadcrumb {
       font-size: 16px;
       margin: 10px 0;
+      color: #666;
     }
+
     .breadcrumb a {
       text-decoration: none;
-      color: blue;
+      color: #0077cc;
+      transition: font-weight 0.3s ease, color 0.3s ease;
     }
+
     .breadcrumb a:hover {
-      text-decoration: underline;
+      font-weight: bold;
+      color: #00509e;
     }
+
     .breadcrumb span {
       margin: 0 5px;
-      color: gray;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <!-- Breadcrumb Navigation -->
-  <nav class="breadcrumb">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="index.html">Home</a>
     <span>&gt;</span>
     <a href="subsite.html">Subsite</a>
