@@ -11,25 +11,29 @@ body {
   align-items: center;
 }
 
-/* Bezel Styling */
+
 .bezel {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 1000;
-  padding: 0 10px;
-  box-sizing: border-box;
-  transition: height 0.3s ease-in-out;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  transition: height 0.3s ease;
 }
 
 .bezel:hover {
   height: 75px;
+}
+
+.site-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 /* Image Styling */
@@ -46,8 +50,10 @@ body {
 /* Bezel Text Styling */
 .bezel-text {
   font-size: 1.5rem;
-  pointer-events: none; /* Prevent clicks on the text */
+  text-align: center; /* Center the text in the bezel */
+  flex-grow: 1; /* Take up available space between the image and the edge */
 }
+
 
 /* Text Styling */
 .main-text {
