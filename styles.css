@@ -32,8 +32,8 @@ body {
 
 /* Image Styling */
 .site-logo {
-  width: 150px; /* Adjust the width */
-  height: 150px; /* Adjust the height */
+  width: 300px; /* Adjust the width */
+  height: 300px; /* Adjust the height */
   object-fit: contain; /* Preserve the aspect ratio within the set dimensions */
   position: absolute;
   left: 10px;
