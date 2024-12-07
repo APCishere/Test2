@@ -46,7 +46,7 @@ body {
 .main-text {
   text-align: center;
   font-size: 3rem; /* Triple the default font size */
-  line-height: 2; /* Double the line spacing */
+  line-height: 8; /* Double the line spacing */
   margin-top: 70px; /* Offset for fixed bezel */
   padding: 0 20px;
 }
