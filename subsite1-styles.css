@@ -19,7 +19,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -34,21 +34,24 @@ body {
 
 /* Image Styling */
 .site-logo {
-  height: 40px; /* Adjust image size */
-  margin-right: 10px;
+  height: 40px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+/* Bezel Text Styling */
 .bezel-text {
   font-size: 1.5rem;
-  text-align: center;
-  
+  pointer-events: none; /* Prevent clicks on the text */
 }
 
 /* Text Styling */
 .main-text {
   text-align: center;
   font-size: 3rem; /* Triple the default font size */
-  line-height: 8; /* Double the line spacing */
+  line-height: 2; /* Double the line spacing */
   margin-top: 70px; /* Offset for fixed bezel */
   padding: 0 20px;
 }
