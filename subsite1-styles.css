@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e7dfe8;
+  color: #333;
+}
+
+.bezel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  transition: height 0.3s ease;
+}
+
+.bezel:hover {
+  height: 75px;
+}
+
+.site-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.site-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bezel-text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+}
