@@ -20,44 +20,6 @@ body {
   font-family: 'SF Pro Rounded', sans-serif;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  width: 60%; /* Set the slideshow to 60% of the screen width */
-  margin: 0 auto; /* Center the slideshow horizontally */
-  overflow: hidden; /* Hide overflowing images */
-  border-radius: 15px; /* Smooth edges for the slideshow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a smooth effect */
-  height: 200px; /* Define the height of the slideshow */
-  position: relative; /* Keep it positioned in flow */
-  background-color: #f4f4f4; /* Optional background */
-}
-
-/* Slideshow wrapper */
-.slideshow-wrapper {
-  display: flex;
-  width: calc(300%); /* Space for three images */
-  animation: slide 6s linear infinite; /* Smooth infinite scrolling */
-}
-
-/* Slideshow images */
-.slideshow-image {
-  flex: 1;
-  width: 100%;
-  object-fit: cover; /* Ensure images fit within the container */
-  height: 100%;
-  border-radius: 15px; /* Match the rounded edges of the container */
-}
-
-/* Keyframes for sliding effect */
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33.33% { transform: translateX(-100%); }
-  66.66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-
-
-
 .bezel {
   display: flex;
   align-items: center;
