@@ -1,12 +1,15 @@
-// JavaScript to change the background color as you scroll
 document.addEventListener("scroll", () => {
+  const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercentage = window.scrollY / maxScroll;
+  const scrollFraction = scrollHeight / maxScroll;
 
-  // Map the scroll percentage to a color scale
-  const red = Math.min(244 + Math.round(scrollPercentage * (51)), 255);
-  const green = Math.min(244 - Math.round(scrollPercentage * (50)), 255);
-  const blue = Math.min(249 - Math.round(scrollPercentage * (149)), 255);
+  // Interpolate between base color and max shade
+  const startColor = [231, 223, 232]; // #e7dfe8
+  const endColor = [156, 157, 255]; // #9c9dff
 
-  document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  const currentColor = startColor.map((start, index) =>
+    Math.round(start + (endColor[index] - start) * scrollFraction)
+  );
+
+  document.body.style.backgroundColor = `rgb(${currentColor.join(",")})`;
 });
