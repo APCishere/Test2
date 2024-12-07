@@ -9,7 +9,7 @@ body {
 }
 
 /* Breadcrumb styles */
-.site-logo {
+.breadcrumb {
   font-size: 16px;
   text-align: center;
   margin: 0;
@@ -26,18 +26,18 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.site-logo a {
+.breadcrumb a {
   text-decoration: none;
   color: #0077cc;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-.site-logo a:hover {
+.breadcrumb a:hover {
   color: #66b2ff;
   font-weight: bold;
 }
 
-.site-logo span {
+.breadcrumb span {
   color: white;
 }
 
