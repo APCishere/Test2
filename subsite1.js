@@ -5,7 +5,7 @@ document.addEventListener("scroll", () => {
 
   // Interpolate between base color and max shade
   const startColor = [231, 223, 232]; // #e7dfe8
-  const endColor = [156, 157, 255]; // #9c9dff
+  const endColor = [169, 145, 255]; // #9c9dff
 
   const currentColor = startColor.map((start, index) =>
     Math.round(start + (endColor[index] - start) * scrollFraction)
