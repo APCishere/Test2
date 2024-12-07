@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <!-- Link to external CSS -->
+  <title>Main Site</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <!-- Breadcrumb Navigation -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <span>Home</span>
-  </nav>
-
-  <!-- Buttons -->
-  <a href="subsite1.html" class="button button1">Subsite 1</a>
-  <a href="subsite2.html" class="button button2">Subsite 2</a>
+  <header class="bezel">
+    <a href="index.html" class="site-link">
+      <img src="siteimg.png" alt="Site Logo" class="site-logo">
+      <span class="bezel-text">Home</span>
+    </a>
+  </header>
+  <div class="button-container">
+    <a href="subsite1.html" class="button">Subsite 1</a>
+    <a href="subsite2.html" class="button">Subsite 2</a>
+  </div>
 </body>
 </html>
