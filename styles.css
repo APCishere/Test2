@@ -1,76 +1,66 @@
-/* General styles for the body */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  height: 100vh;
-  position: relative; /* For positioning elements relative to the viewport */
+  background-color: #e7dfe8;
+  color: #333;
 }
 
-/* Breadcrumb styles */
-.breadcrumb {
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  background-color: black; /* Black bezel */
-  color: white;
+.bezel {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: fixed; /* Sticks to the top of the screen */
+  justify-content: center;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: white;
+  height: 50px;
+  transition: height 0.3s ease;
 }
 
-.breadcrumb a {
+.bezel:hover {
+  height: 75px;
+}
+
+.site-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: #0077cc;
-  transition: color 0.3s ease, font-weight 0.3s ease;
-}
-
-.breadcrumb a:hover {
-  color: #66b2ff;
-  font-weight: bold;
-}
-
-.breadcrumb span {
   color: white;
 }
 
-/* Button styles */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
+.site-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bezel-text {
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   background-color: #004aad;
+  text-decoration: none;
   border-radius: 5px;
-  border: none;
-  position: absolute; /* Allows free placement on the screen */
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Individual button positions */
-.button1 {
-  top: 150px;
-  left: 50px;
-}
-
-.button2 {
-  top: 150px;
-  right: 50px;
-}
-
-/* Hover effect for buttons */
 .button:hover {
   background-color: #66b2ff;
-  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px rgba(102, 178, 255, 0.7);
 }
