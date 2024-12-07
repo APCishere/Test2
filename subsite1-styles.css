@@ -11,6 +11,36 @@ body {
   align-items: center;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  position: fixed;
+  top: 50%;
+  left: -100%; /* Initially off-screen */
+  display: flex;
+  gap: 10px;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s ease, left 1s ease; /* Smooth entry */
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Slideshow images */
+.slideshow-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: slide-show 6s infinite ease-in-out; /* Infinite sliding animation */
+}
+
+/* Keyframes for image sliding */
+@keyframes slide-show {
+  0% { opacity: 0; transform: scale(0.9); }
+  20% { opacity: 1; transform: scale(1); }
+  80% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.9); }
+}
 
 .bezel {
   display: flex;
