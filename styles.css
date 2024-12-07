@@ -31,9 +31,11 @@ body {
 }
 
 .site-logo {
-  width: 40px;
-  height: auto;
-  margin-right: 10px;
+  height: 40px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .bezel-text {
