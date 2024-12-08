@@ -18,7 +18,7 @@
   <!-- Bezel Section -->
   <header class="bezel">
     <a href="index.html" class="site-link">
-      <img src="images/omylicon.png" alt="Site Logo" class="bezel-logo">
+      <img src="images/siteimg.png" alt="Site Logo" class="bezel-logo">
     </a>
     <span class="bezel-text">Subsite 1</span>
   </header>
@@ -26,40 +26,17 @@
   <!-- Main Content -->
   <div class="main-text">
     Welcome to Subsite 1<br>
-    Enjoy the slideshow and explore further!
+    Check out the image slider below!
   </div>
 
-  <!-- Slideshow Container -->
-  <div class="slideshow-container">
-    <div class="slideshow-wrapper">
-      <a href="#page1"><img src="images/image1.png" class="slideshow-image" alt="Image 1"></a>
-      <a href="#page2"><img src="images/image2.png" class="slideshow-image" alt="Image 2"></a>
-      <a href="#page3"><img src="images/image3.png" class="slideshow-image" alt="Image 3"></a>
-      <a href="#page4"><img src="images/prod1.png" class="slideshow-image" alt="Image 4"></a>
-      <a href="#page5"><img src="images/omylicon.png" class="slideshow-image" alt="Image 5"></a>
-    </div>
-  </div>
-
-  <!-- Blank Sections -->
-  <div id="page1" class="blank-section">
-    <h2>Page 1</h2>
-    <p>Add your content here for Image 1.</p>
-  </div>
-  <div id="page2" class="blank-section">
-    <h2>Page 2</h2>
-    <p>Add your content here for Image 2.</p>
-  </div>
-  <div id="page3" class="blank-section">
-    <h2>Page 3</h2>
-    <p>Add your content here for Image 3.</p>
-  </div>
-  <div id="page4" class="blank-section">
-    <h2>Page 4</h2>
-    <p>Add your content here for Image 4.</p>
-  </div>
-  <div id="page5" class="blank-section">
-    <h2>Page 5</h2>
-    <p>Add your content here for Image 5.</p>
+  <!-- Image Box -->
+  <div class="image-box">
+    <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
+    <img src="images/image1.png" alt="Slider Image" id="slider-image">
+    <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
   </div>
 </body>
+
+<!-- Link to JavaScript -->
+<script src="subsite1-scripts.js"></script>
 </html>
