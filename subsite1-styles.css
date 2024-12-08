@@ -1,78 +1,88 @@
-/* General Body Styling */
+/* General Styling */
 body {
   font-family: 'SF Pro Rounded', sans-serif;
+  background-color: #e7dfe8;
   margin: 0;
   padding: 0;
-  background-color: #e7dfe8;
-  color: #333;
-  height: 200vh; /* Double the height to make scrolling noticeable */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Main text adjustments */
-.main-text {
-  text-align: center;
-  font-size: 3rem;
-  line-height: 2.5;
-  margin-bottom: 3rem; /* Add spacing between text and slideshow */
-  font-family: 'SF Pro Rounded', sans-serif;
-}
-
+/* Bezel Styling */
 .bezel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
   top: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
+  z-index: 10;
+}
+
+.bezel-logo {
+  width: 50px;
   height: 50px;
-  transition: height 0.3s ease;
+  margin-right: 10px;
 }
 
-.bezel:hover {
-  height: 75px;
-}
-
-.site-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-}
-
-/* Image Styling */
-.site-logo {
-  width: 3000px; /* Adjust the width */
-  height: 3000px; /* Adjust the height */
-  object-fit: contain; /* Preserve the aspect ratio within the set dimensions */
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Bezel Text Styling */
 .bezel-text {
-  font-size: 1.5rem;
-  text-align: center; /* Center the text in the bezel */
-  flex-grow: 1; /* Take up available space between the image and the edge */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
 }
 
-
-/* Text Styling */
+/* Main Content */
 .main-text {
   text-align: center;
-  font-size: 3rem; /* Triple the default font size */
-  line-height: 2; /* Double the line spacing */
-  margin-top: 70px; /* Offset for fixed bezel */
-  padding: 0 20px;
+  font-size: 2rem;
+  margin: 20px;
 }
 
-/* Scrolling Effect */
-body {
-  background: linear-gradient(to bottom, #e7dfe8, #9c9dff);
+/* Slideshow */
+.slideshow-container {
+  width: 60%;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-wrapper {
+  display: flex;
+  animation: slide 15s linear infinite;
+}
+
+.slideshow-image {
+  width: 33.33%; /* 3 images at a time */
+  object-fit: cover;
+}
+
+/* Blank Section */
+.blank-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+.blank-section h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.blank-section p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Slideshow Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-33.33%); }
+  45% { transform: translateX(-33.33%); }
+  50% { transform: translateX(-66.66%); }
+  70% { transform: translateX(-66.66%); }
+  75% { transform: translateX(-99.99%); }
+  95% { transform: translateX(-99.99%); }
+  100% { transform: translateX(0); }
 }
